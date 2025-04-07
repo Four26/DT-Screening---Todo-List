@@ -13,14 +13,30 @@
         <main>
             <aside>
                 <div class="add-task">
-                    <button>+</button>
+                    <button class="add" type="button">+</button>
                     <span>Add task</span>
                 </div>
             </aside>
-            <section></section>
+            <!-- Modal -->
+            <div class="modal">
+                <form class="modal-content">
+                    <h2>Add a task</h2>
+                    <label for="task">Task Title</label>
+                    <input type="text" id="task" name="task">
+                    <label for="description">Description (optional)</label>
+                    <textarea name="description" id="description"></textarea>
+                    <div class="modal-btn">
+                        <button class="save" type="submit">Save</button>
+                        <button class="cancel" type="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <!-- End Modal -->
+            <section class="task-container"></section>
         </main>
         <footer>
             <p>Made by Frank</p>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>
